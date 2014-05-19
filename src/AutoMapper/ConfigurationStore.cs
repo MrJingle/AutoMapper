@@ -527,7 +527,7 @@ namespace AutoMapper
 
 			var typeMapsChecked = new List<TypeMap>();
 
-			foreach (var typeMap in _typeMaps)
+            foreach (var typeMap in typeMaps)
 			{
 				DryRunTypeMap(typeMapsChecked, new ResolutionContext(typeMap, null, typeMap.SourceType, typeMap.DestinationType, new MappingOperationOptions(), Mapper.Engine));
 			}
